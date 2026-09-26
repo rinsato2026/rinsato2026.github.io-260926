@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>札幌市南区の魅力</title>
+    <style>
+        /* 基本スタイル設定 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* ヒーローヘッダー */
+        header {
+            background: linear-gradient(rgba(46, 125, 50, 0.85), rgba(27, 94, 32, 0.85)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* コンテナ layout */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .intro h2 {
+            color: #2e7d32;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        /* メインカードグリッド */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 15px 20px;
+        }
+        .card-header.accent-1 { background-color: #e65100; }
+        .card-header.accent-2 { background-color: #0277bd; }
+        .card-header.accent-3 { background-color: #6a1b9a; }
+
+        /* カード画像のスタイル */
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+        .card-body h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #1b5e20;
+        }
+        .card-body p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #1b5e20;
+            color: #fff;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            header p { font-size: 0.95rem; }
+            .container { margin: 20px auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>北海道 札幌市南区</h1>
+        <p>#豊かな大自然 #温泉 #果樹園 #芸術 #心地よい暮らし</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>札幌市の約60%を占める自然豊かな緑の街</h2>
+            <p>
+                南区は札幌市10区の中で最大の面積を持ち、支笏洞爺国立公園に囲まれた豊かな山々や豊平川が流れる自然あふれる地域です。四季折々の景観やレジャー体験が楽しめます。
+            </p>
+        </section>
+
+        <section class="card-grid">
+            <!-- 定山渓温泉 -->
+            <article class="card">
+                <div class="card-header accent-1">
+                    <span>温泉・リゾート</span>
+                </div>
+                <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SIxh5PT19DrJpCpJIrSn3d84Dxf_I8LPVIF8Y6zeAFNX9NpNxnI0gEgTrErliF7qj_jKSdI5cVQi5WRcFJ8uyaFMMI3RuJD4ygRPDvwt8cLCx_4WXAWLyJ5QjeXHl4kWCnFs7NnQ=s1360-w1360-h1020" alt="定山渓温泉" class="card-img">
+                <div class="card-body">
+                    <h3>定山渓温泉</h3>
+                    <p>開湯160年の歴史を誇る札幌の奥座敷。渓谷の美しい紅葉や日帰り湯、サウナやカヌー体験など1年を通してリフレッシュできます。</p>
+                    <div class="tag-list">
+                        <span class="tag">#定山渓温泉</span>
+                        <span class="tag">#紅葉の名所</span>
+                        <span class="tag">#足湯</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 観光果樹園 -->
+            <article class="card">
+                <div class="card-header">
+                    <span>味覚・収穫体験</span>
+                </div>
+                <img src="https://jozankei.jp/wp-content/uploads/2023/08/812820d4a289a232ee66daf201bf32c1-1536x1152.jpg" alt="観光果樹園" class="card-img">
+                <div class="card-body">
+                    <h3>観光果樹園・収穫体験</h3>
+                    <p>砥山地区などの日当たりの良い畑で、イチゴ・サクランボ・リンゴ狩りなど季節のフルーツや野菜の収穫体験が楽しめます。</p>
+                    <div class="tag-list">
+                        <span class="tag">#果物狩り</span>
+                        <span class="tag">#八剣山</span>
+                        <span class="tag">#サクランボ・リンゴ</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 滝野すずらん丘陵公園 & 自然 -->
+            <article class="card">
+                <div class="card-header accent-2">
+                    <span>公園・アウトドア</span>
+                </div>
+                <img src="https://www.mlit.go.jp/sogoseisaku/region/infratourism/infralist/hokkaido/img/06/01.jpg" alt="滝野すずらん丘陵公園" class="card-img">
+                <div class="card-body">
+                    <h3>国営滝野すずらん丘陵公園</h3>
+                    <p>北海道唯一の国営公園。春の花々、夏のキャンプ、秋の紅葉、冬の雪遊びやそり滑りなど、家族で一日中満喫できる人気スポットです。</p>
+                    <div class="tag-list">
+                        <span class="tag">#国営公園</span>
+                        <span class="tag">#ファミリー</span>
+                        <span class="tag">#真駒内公園</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 札幌芸術の森 -->
+            <article class="card">
+                <div class="card-header accent-3">
+                    <span>アート・文化</span>
+                </div>
+                <img src="https://jl-db.nfaj.go.jp/assets/images/202009/l/f1f8f9fcbc3b1db85ad68cf0e7cf9ac2.jpg" alt="札幌芸術の森" class="card-img">
+                <div class="card-body">
+                    <h3>札幌芸術の森</h3>
+                    <p>広大な自然の中に彫刻が並ぶ野外美術館やクラフト工房、美術館があり、鑑賞だけでなく工芸や陶芸の制作体験も楽しめます。</p>
+                    <div class="tag-list">
+                        <span class="tag">#野外美術館</span>
+                        <span class="tag">#クラフト体験</span>
+                        <span class="tag">#文化都市</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 札幌市南区 魅力紹介ページ</p>
+    </footer>
+
+</body>
+</html>
